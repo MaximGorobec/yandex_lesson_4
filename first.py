@@ -1,5 +1,13 @@
+from PyQt6.QtWidgets import QPushButton, QWidget
 def main():
-    print('My first git-repo')
+    class YellowDots(QWidget):
+        def __init__(self):
+            super().__init__()
+            self.initUI()
+
+        def initUI(self):
+            self.setGeometry(300, 300, 300, 300)
+            self.setWindowTitle('желтые точки')
 
 
 
